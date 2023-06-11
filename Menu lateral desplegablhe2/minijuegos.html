@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="minijuegos.html">Minijuegos</a></li>
+        <li><a href="avatar.html">Avatar</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="robux.html">Robux</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <center><h2>DIVERSOS MUNDOS POR EXPLORAR</h2></center>
+      <br>
+      <center><img src="minijue.png" width="500" alt="Logo"></center>
+      <br>
+      <br>
+      <p><center>¿Alguna vez has deseado tener un mundo hecho a tu medida, donde pudieras crear tus propias aventuras y jugar a miles de minijuegos acompañado de tus amigos?</center></p>
+      <br>
+      <p><center>Roblox podrás hacer todo eso y mucho más. Juega ahora desde Minijuegos y deja volar tu imaginación. Tú pones el límite de lo que seas capaz de crear.</center></p>
+      <br>
+      <p><center>Juega a Roblox y sumérgete en este MMOG (Massively Multiplayer Online Game) gratuito que está basado en la construcción con bloques al estilo Minecraft. Crea tu propio mundo virtual o explora los miles de mundos creados por el resto de usuarios. En ellos podrás recoger recursos, construir cualquier cosa que puedas imaginar, inventar juegos desde cero, personalizar tu personaje creando elementos estéticos tú mismo o combatir contra otros jugadores.</center></p>
+      <br>
+      <br>
+      <center><button>Mostrar menu</button></center>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>

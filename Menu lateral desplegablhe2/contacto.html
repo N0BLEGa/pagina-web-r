@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barra lateral dinamico</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="sidebar">
+      <div class="side-hide">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+
+      <img src="logo.png" width="120" alt="Logo">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="minijuegos.html">Minijuegos</a></li>
+        <li><a href="avatar.html">Avatar</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="robux.html">Robux</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <center><h2>CONTACTANOS</h2></center>
+      <br>
+      <center><img src="contacto.png" width="500" alt="Logo"></center>
+      <br>
+      <br>
+      <p><center>Para ponerse en contacto con Roblox se debe cumplir los siguientes pasos:</center></p>
+      <br>
+      <p><center>Tienes que ingresar a su página oficial.
+        <br>
+        Allí tienes que rellenar todos los datos de contacto que te soliciten: nombre de usuario (opcional), dirección de correo electrónico y confirmarlo.
+        <br>
+        Luego rellenar los detalles del problema: En qué dispositivo ocurre el problema, la categoría de ayuda y la descripción del problema..
+        <br>
+        Por último le das clic a Enviar, y tendrás que esperar la respuesta de Roblox.</center></p>
+      <br>
+      <br>
+      <center><button>Mostrar menu</button></center>
+    </div>
+
+  </section>
+
+<!-- JS Script -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+
+  // Muestra SideBar
+  $('button').on('click', function() {
+    $(".container").toggleClass('show');
+  })
+
+  // Oculta SideBar
+  $('.side-hide').on('click', function() {
+    $(".container").toggleClass('show');
+  });
+</script>
+
+</body>
+</html>
